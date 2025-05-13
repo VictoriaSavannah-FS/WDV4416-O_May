@@ -23,11 +23,11 @@ test("Invalid Card Number: length is more than 16 digits ", () => {
 });
 // 4) Valid card number length of 12
 
-test("hides the last 4 digits of a card number", () => {
+test("hides the last 4 digits of a card number when card number length is 12", () => {
   expect(hiddenCardNums("123456789012")).toBe("********9012");
 });
 
-// 5) Valid card number length of 15
-test("hides the last 4 digits of a card number", () => {
-  expect(hiddenCardNums("123456789012141")).toBe("***********2141");
+// 5) Valid card number length of 14
+test("hides the last 4 digits of a card number when card number lenght is 14", () => {
+  expect(hiddenCardNums("12345678901214")).toBe("**********1214");
 });
